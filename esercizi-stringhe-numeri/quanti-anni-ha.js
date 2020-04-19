@@ -11,3 +11,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const ytoday = 2020;
+const yborn = 1987;
+const age = ytoday - yborn;
+const century = 100 - age;
+
+console.log (`io ho ${age} anni e mi mancano ${century} anni per arrivare a 100`);

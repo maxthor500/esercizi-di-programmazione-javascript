@@ -12,3 +12,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const n = 12560;
+const h = Math.floor (n/3600);
+const min = Math.floor ((n%3600)/60);
+const s = Math.floor ((n%3600)%60);
+
+console.log(`${n} secondi sono uguali a: ${h} ore, ${min} minuti e ${s} secondi`);
