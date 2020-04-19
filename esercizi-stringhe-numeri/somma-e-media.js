@@ -18,5 +18,4 @@ var e=5;
 var somma = a+b+c+d+e;
 var media = somma/5;
 
-console.log('somma');
-console.log('media');
+console.log(`la somma dei numeri è ${somma}. la media è ${media}`);

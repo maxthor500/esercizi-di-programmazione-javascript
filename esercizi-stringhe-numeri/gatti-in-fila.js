@@ -17,3 +17,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var cats = 44;
+var inline = 6;
+
+var totline = Math.ceil (cats/inline);
+var catsleft = totline*inline-cats;
+
+console.log(`${cats} gatti in fila per ${inline} si unirono compatti in ${totline} file. Nell'ultima fila rimasero ${catsleft} posti disponibili`);
+;
