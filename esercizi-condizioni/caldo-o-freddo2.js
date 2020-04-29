@@ -17,9 +17,46 @@ const e = 15;
 const f = -6;
 const g = 7;
 
-cold = Math.min(a, b, c, d, e, f, g);
+var hot;
+var cold;
 
-hot = Math.max(a, b, c, d, e, f, g);
+if (a > b) {
+    hot = a;
+    cold = b;
+} else {
+    hot = b;
+    cold = a;
+}
+
+if (c > hot) {
+    hot = c;
+} else if (c < cold) {
+    cold = c;
+}
+
+if (d > hot) {
+    hot = d;
+} else if (d < cold) {
+    cold = d;
+}
+
+if (e > hot) {
+    hot = e;
+} else if (e < cold) {
+    cold = e;
+}
+
+if (f > hot) {
+    hot = f;
+} else if (f < cold) {
+    cold = f;
+}
+
+if (g > hot) {
+    hot = g;
+} else if (g < cold) {
+    cold = g;
+}
 
 
 console.log(`il giorno più caldo della settimana ha ${hot} gradi ed il giorno più freddo della settimana ha ${cold} gradi`);
